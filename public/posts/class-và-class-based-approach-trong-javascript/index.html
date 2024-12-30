@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Class và Class-based Approach trong JavaScript. | Blog của Minh</title>
+<meta property="og:title" content="Class và Class-based Approach trong JavaScript. | Blog của Minh" />
+<meta name="twitter:title" content="Class và Class-based Approach trong JavaScript. | Blog của Minh" />
+<meta itemprop="name" content="Class và Class-based Approach trong JavaScript. | Blog của Minh" />
+<meta name="application-name" content="Class và Class-based Approach trong JavaScript. | Blog của Minh" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="Tìm hiểu về cách đặt tên biến, các kiểu dữ liệu, cách ép hiểu và ghi chú trong javascript.">
+<meta itemprop="description" content="Tìm hiểu về cách đặt tên biến, các kiểu dữ liệu, cách ép hiểu và ghi chú trong javascript." />
+<meta property="og:description" content="Tìm hiểu về cách đặt tên biến, các kiểu dữ liệu, cách ép hiểu và ghi chú trong javascript." />
+<meta name="twitter:description" content="Tìm hiểu về cách đặt tên biến, các kiểu dữ liệu, cách ép hiểu và ghi chú trong javascript." />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/class-v%C3%A0-class-based-approach-trong-javascript/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2024-12-30T00:00:00Z />
+    <meta property="article:published_time" content=2024-12-30T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/posts/class-v%C3%A0-class-based-approach-trong-javascript/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Class và Class-based Approach trong JavaScript.",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2024-12-30",
+        "description": "Tìm hiểu về cách đặt tên biến, các kiểu dữ liệu, cách ép hiểu và ghi chú trong javascript.",
+        "wordCount":  597 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2024-12-30",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Blog của Minh"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.140.1">
+
+    
+    <meta property="og:url" content="http://localhost:1313/posts/class-v%C3%A0-class-based-approach-trong-javascript/">
+  <meta property="og:site_name" content="Blog của Minh">
+  <meta property="og:title" content="Class và Class-based Approach trong JavaScript.">
+  <meta property="og:description" content="Tìm hiểu về cách đặt tên biến, các kiểu dữ liệu, cách ép hiểu và ghi chú trong javascript.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-30T00:00:00+00:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Class và Class-based Approach trong JavaScript.">
+  <meta name="twitter:description" content="Tìm hiểu về cách đặt tên biến, các kiểu dữ liệu, cách ép hiểu và ghi chú trong javascript.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/posts/class-v%C3%A0-class-based-approach-trong-javascript/">
+    <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" crossorigin="anonymous" />
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    integrity="sha512-LQNxIMR5rXv7o+b1l8+N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r+EFLLCyA=="
+    crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX+yKMUFHzjaH2+AnM6vp2Xs+gNmaBAVWJjSmuPw76Efg==" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });"></script>
+
+    
+</head>
+<body data-theme = "" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Class và Class-based Approach trong JavaScript.</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2024-12-30T00:00:00&#43;00:00" itemprop="datePublished"> Dec 30, 2024 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>Trong JavaScript, class là một cách tổ chức và sử dụng code để tạo các đối tượng theo hướng lập trình hướng đối tượng (OOP). Nó được giới thiệu từ ECMAScript 2015 (ES6) và cung cấp cú pháp rõ ràng, dễ đọc hơn so với việc sử dụng các hàm khởi tạo (constructor function) truyền thống.</p>
+<h3 id="1-class-là-gì">1. Class là gì?</h3>
+<p>Class trong JavaScript là một &ldquo;khuôn mẫu&rdquo; (blueprint) để tạo các đối tượng có thuộc tính (property) và phương thức (method). Class cung cấp cú pháp đơn giản hơn để làm việc với lập trình hướng đối tượng.</p>
+<pre><code>class Person {
+    constructor(name, age) {
+        this.name = name; // Thuộc tính
+        this.age = age;
+    }
+
+    greet() { // Phương thức
+        console.log(`Hi, I'm ${this.name}, and I'm ${this.age} years old.`);
+    }
+}
+
+const person1 = new Person(&quot;Minh&quot;, 22);
+person1.greet(); // &quot;Hi, I'm Minh, and I'm 22 years old.&quot;
+</code></pre>
+<h3 id="2-cấu-trúc-của-một-class">2. Cấu trúc của một Class</h3>
+<p>2.1. Constructor</p>
+<p>Phương thức đặc biệt được gọi khi một đối tượng mới được tạo từ class.
+Sử dụng để khởi tạo giá trị thuộc tính.</p>
+<pre><code>class Car {
+    constructor(brand, model) {
+        this.brand = brand;
+        this.model = model;
+    }
+}
+</code></pre>
+<p>2.2. Thuộc tính</p>
+<p>Được định nghĩa trong constructor hoặc trực tiếp trong class (từ ES2022 hỗ trợ).</p>
+<pre><code>class Car {
+    brand = &quot;Toyota&quot;; // Thuộc tính trực tiếp
+    constructor(model) {
+        this.model = model; // Thuộc tính qua constructor
+    }
+}
+</code></pre>
+<p>2.3. Phương thức</p>
+<p>Được định nghĩa trực tiếp trong class, dùng để thêm hành vi cho các đối tượng.</p>
+<pre><code>class Car {
+    start() {
+        console.log(&quot;Car is starting...&quot;);
+    }
+}
+</code></pre>
+<p>2.4. Getter và Setter</p>
+<p>Getter để lấy giá trị thuộc tính.
+Setter để gán giá trị thuộc tính.</p>
+<pre><code>class Person {
+    constructor(name) {
+        this._name = name; 
+    }
+
+    get name() {
+        return this._name.toUpperCase();
+    }
+
+    set name(newName) {
+        this._name = newName;
+    }
+}
+
+const person = new Person(&quot;Alice&quot;);
+console.log(person.name); // &quot;ALICE&quot;
+person.name = &quot;Bob&quot;;
+console.log(person.name); // &quot;BOB&quot;
+</code></pre>
+<p>2.5. Static Method</p>
+<p>Là phương thức thuộc về class, không thuộc về đối tượng cụ thể.
+Được gọi bằng class thay vì đối tượng.</p>
+<pre><code>class MathUtils {
+    static add(a, b) {
+        return a + b;
+    }
+}
+
+console.log(MathUtils.add(2, 3)); // 5
+</code></pre>
+<h3 id="3-tính-kế-thừa-inheritance">3. Tính kế thừa (Inheritance)</h3>
+<p>JavaScript cho phép một class kế thừa từ class khác bằng từ khoá extends. Class con có thể sử dụng và mở rộng thuộc tính, phương thức của class cha.</p>
+<pre><code>class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() {
+        console.log(`${this.name} makes a sound.`);
+    }
+}
+
+class Dog extends Animal {
+    speak() {
+        console.log(`${this.name} barks.`);
+    }
+}
+
+const dog = new Dog(&quot;Buddy&quot;);
+dog.speak(); // &quot;Buddy barks.&quot;
+</code></pre>
+<h3 id="4-class-based-approach">4. Class-based Approach</h3>
+<p>Cách tiếp cận dựa trên class (class-based approach) là một phong cách lập trình trong đó bạn sử dụng class để xây dựng ứng dụng. Điều này thường được sử dụng trong các ứng dụng lớn cần tổ chức rõ ràng.
+Ưu điểm:</p>
+<p>Tái sử dụng code: Class cho phép bạn sử dụng lại các thuộc tính và phương thức thông qua kế thừa.
+Tổ chức tốt hơn: Mã nguồn dễ đọc và quản lý hơn với các khối rõ ràng.
+Hỗ trợ tốt cho OOP: Các khái niệm như kế thừa, đóng gói (encapsulation), và đa hình (polymorphism) được hỗ trợ tự nhiên.</p>
+<pre><code>class User {
+    constructor(username, email) {
+        this.username = username;
+        this.email = email;
+    }
+
+    login() {
+        console.log(`${this.username} logged in.`);
+    }
+
+    logout() {
+        console.log(`${this.username} logged out.`);
+    }
+}
+
+class Admin extends User {
+    deleteUser(user) {
+        console.log(`Admin deleted user: ${user.username}`);
+    }
+}
+
+const user1 = new User(&quot;johnDoe&quot;, &quot;john@example.com&quot;);
+user1.login(); // &quot;johnDoe logged in.&quot;
+
+const admin = new Admin(&quot;adminUser&quot;, &quot;admin@example.com&quot;);
+admin.deleteUser(user1); // &quot;Admin deleted user: johnDoe&quot;
+</code></pre>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2024 .
+        
+    </small>
+</footer>
+
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

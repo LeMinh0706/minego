@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Object trong javascript. | Blog của Minh</title>
+<meta property="og:title" content="Object trong javascript. | Blog của Minh" />
+<meta name="twitter:title" content="Object trong javascript. | Blog của Minh" />
+<meta itemprop="name" content="Object trong javascript. | Blog của Minh" />
+<meta name="application-name" content="Object trong javascript. | Blog của Minh" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="Cùng tìm hiểu về những khái niệm của Object.">
+<meta itemprop="description" content="Cùng tìm hiểu về những khái niệm của Object." />
+<meta property="og:description" content="Cùng tìm hiểu về những khái niệm của Object." />
+<meta name="twitter:description" content="Cùng tìm hiểu về những khái niệm của Object." />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/object-trong-javascript/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2024-12-30T00:00:00Z />
+    <meta property="article:published_time" content=2024-12-30T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/posts/object-trong-javascript/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Object trong javascript.",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2024-12-30",
+        "description": "Cùng tìm hiểu về những khái niệm của Object.",
+        "wordCount":  523 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2024-12-30",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Blog của Minh"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.140.1">
+
+    
+    <meta property="og:url" content="http://localhost:1313/posts/object-trong-javascript/">
+  <meta property="og:site_name" content="Blog của Minh">
+  <meta property="og:title" content="Object trong javascript.">
+  <meta property="og:description" content="Cùng tìm hiểu về những khái niệm của Object.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-30T00:00:00+00:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Object trong javascript.">
+  <meta name="twitter:description" content="Cùng tìm hiểu về những khái niệm của Object.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/posts/object-trong-javascript/">
+    <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" crossorigin="anonymous" />
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    integrity="sha512-LQNxIMR5rXv7o+b1l8+N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r+EFLLCyA=="
+    crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX+yKMUFHzjaH2+AnM6vp2Xs+gNmaBAVWJjSmuPw76Efg==" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });"></script>
+
+    
+</head>
+<body data-theme = "" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Object trong javascript.</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2024-12-30T00:00:00&#43;00:00" itemprop="datePublished"> Dec 30, 2024 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>Object là một trong những kiểu dữ liệu cơ bản và quan trọng nhất trong JavaScript. Nó cho phép bạn lưu trữ, quản lý và thao tác dữ liệu phức tạp dưới dạng các cặp key-value (khoá và giá trị). Hãy cùng tìm hiểu chi tiết về cách sử dụng Object trong JavaScript!</p>
+<h3 id="1-khái-niệm-về-object">1. Khái niệm về Object</h3>
+<p>Trong JavaScript, Object là một tập hợp các cặp key-value.</p>
+<ul>
+<li>
+<p>Key (khoá): Là một chuỗi (hoặc ký hiệu - symbol) đại diện cho tên thuộc tính.</p>
+</li>
+<li>
+<p>Value (giá trị): Có thể là bất kỳ kiểu dữ liệu nào, bao gồm cả hàm, các object khác, hoặc giá trị nguyên thuỷ.</p>
+<pre><code>  const person = {
+      name: &quot;Minh&quot;,
+      age: 21,
+      isStudent: false,
+      greet: function() {
+          console.log(`Hello, my name is ${this.name}!`);
+      },
+  };
+
+  console.log(person.name); // &quot;Minh&quot;
+  person.greet(); // &quot;Hello, my name is Minh!&quot;
+</code></pre>
+</li>
+</ul>
+<h3 id="2-tạo-object">2. Tạo Object</h3>
+<p>2.1. Tạo bằng cú pháp chữ (Object Literal)</p>
+<p>Đây là cách phổ biến và đơn giản nhất để tạo một object.</p>
+<pre><code>const car = {
+    brand: &quot;Toyota&quot;,
+    model: &quot;Vios&quot;,
+    year: 2018,
+};
+</code></pre>
+<p>2.2. Tạo bằng từ khoá new Object()</p>
+<p>Cách này ít được sử dụng nhưng vẫn hợp lệ.</p>
+<pre><code>const car = new Object();
+car.brand = &quot;Toyota&quot;;
+car.model = &quot;Camry&quot;;
+car.year = 2022;
+</code></pre>
+<p>2.3. Tạo bằng hàm Constructor</p>
+<p>Bạn có thể sử dụng hàm để tạo object.</p>
+<pre><code>function Car(brand, model, year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+}
+
+const car1 = new Car(&quot;Toyota&quot;, &quot;Vios&quot;, 2018);
+console.log(car1.brand); // &quot;Toyota&quot;
+</code></pre>
+<h3 id="3-truy-cập-thuộc-tính-trong-object">3. Truy cập thuộc tính trong Object</h3>
+<p>3.1. Sử dụng dấu chấm (.)</p>
+<p>Dùng khi key là một tên hợp lệ của biến (không có khoảng trắng, ký tự đặc biệt).</p>
+<pre><code>console.log(person.name); // &quot;Minh&quot;
+</code></pre>
+<p>3.2. Sử dụng dấu ngoặc vuông ([])</p>
+<p>Dùng khi key là chuỗi hoặc chứa ký tự đặc biệt, hoặc khi truy cập bằng biến.</p>
+<pre><code>console.log(person[&quot;age&quot;]); // 21
+
+const key = &quot;isStudent&quot;;
+console.log(person[key]); // true
+</code></pre>
+<h3 id="4-thêm-sửa-và-xoá-thuộc-tính">4. Thêm, sửa, và xoá thuộc tính</h3>
+<p>4.1. Thêm thuộc tính</p>
+<p>Chỉ cần gán giá trị cho một key mới.</p>
+<pre><code>person.hair = &quot;black&quot;;
+console.log(person.hair); // black
+</code></pre>
+<p>4.2. Sửa giá trị</p>
+<p>Gán giá trị mới cho key hiện có.</p>
+<pre><code>person.age = 22;
+console.log(person.age); // 22
+</code></pre>
+<p>4.3. Xoá thuộc tính</p>
+<p>Sử dụng từ khoá delete.</p>
+<pre><code>delete person.isStudent;
+console.log(person.isStudent); // undefined
+</code></pre>
+<h3 id="5-lặp-qua-các-thuộc-tính-của-object">5. Lặp qua các thuộc tính của Object</h3>
+<p>5.1. Sử dụng for&hellip;in</p>
+<p>Duyệt qua tất cả các thuộc tính liệt kê được.</p>
+<pre><code>for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
+</code></pre>
+<p>5.2. Sử dụng Object.keys()</p>
+<p>Trả về một mảng các key.</p>
+<pre><code>Object.keys(person).forEach((key) =&gt; {
+    console.log(`${key}: ${person[key]}`);
+});
+</code></pre>
+<p>5.3. Sử dụng Object.values()</p>
+<p>Trả về một mảng các giá trị.</p>
+<pre><code>console.log(Object.values(person)); // [&quot;Minh&quot;, 22, undefined, ƒ]
+</code></pre>
+<p>5.4. Sử dụng Object.entries()</p>
+<p>Trả về một mảng các cặp [key, value].</p>
+<pre><code>Object.entries(person).forEach(([key, value]) =&gt; {
+    console.log(`${key}: ${value}`);
+});
+</code></pre>
+<h3 id="6-tính-kế-thừa-của-object">6. Tính kế thừa của Object</h3>
+<p>6.1. Kế thừa nguyên mẫu (Prototype)</p>
+<p>Mỗi object trong JavaScript có một nguyên mẫu (prototype) mà nó kế thừa các thuộc tính và phương thức.</p>
+<pre><code>const obj = {};
+console.log(obj.toString()); // &quot;[object Object]&quot;
+</code></pre>
+<p>6.2. Kế thừa bằng cách tạo Object</p>
+<p>Sử dụng Object.create() để kế thừa.</p>
+<pre><code>const parent = { greet: () =&gt; console.log(&quot;Hello!&quot;) };
+const child = Object.create(parent);
+child.name = &quot;Child&quot;;
+child.greet(); // &quot;Hello!&quot;
+</code></pre>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+</div>
+    <small class="footer_copyright">
+        © 2024 .
+        
+    </small>
+</footer>
+
+
+
+
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>
