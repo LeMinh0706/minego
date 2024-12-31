@@ -8,6 +8,19 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bảo Mật Trong Java.</title>
+      <link>http://localhost:1313/posts/b%E1%BA%A3o-m%E1%BA%ADt-trong-java/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/b%E1%BA%A3o-m%E1%BA%ADt-trong-java/</guid>
+      
+      <description>&lt;p&gt;Bảo mật là một trong những yếu tố quan trọng trong việc phát triển phần mềm, đặc biệt đối với các ứng dụng Java thường được sử dụng trong môi trường doanh nghiệp và các hệ thống lớn. Dưới đây là các khía cạnh chính của bảo mật trong Java và các giải pháp để bảo vệ ứng dụng.&lt;/p&gt;
+&lt;h3 id=&#34;1-các-mối-đe-dọa-bảo-mật-thường-gặp&#34;&gt;1. Các Mối Đe Dọa Bảo Mật Thường Gặp&lt;/h3&gt;
+&lt;p&gt;SQL Injection: Kẻ tấn công chèn mã SQL độc hại vào các truy vấn cơ sở dữ liệu.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Biến, kiểu dữ liệu, ép kiểu và ghi chú trong Javascript.</title>
       <link>http://localhost:1313/posts/bi%E1%BA%BFn-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-%C3%A9p-ki%E1%BB%83u-v%C3%A0-ghi-ch%C3%BA-trong-javascript/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
