@@ -1,0 +1,8 @@
+[build]
+  publish = "public" # Thư mục xuất bản sau khi build Hugo
+  command = "hugo"   # Lệnh build Hugo
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
