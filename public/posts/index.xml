@@ -69,17 +69,27 @@ age = 30;
     </item>
     
     <item>
-      <title>Tết đến xuân về.</title>
-      <link>http://localhost:1313/posts/xuan/</link>
-      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <title>Toán tử trong javascript.</title>
+      <link>http://localhost:1313/posts/to%C3%A1n-t%E1%BB%AD-trong-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/xuan/</guid>
+      <guid>http://localhost:1313/posts/to%C3%A1n-t%E1%BB%AD-trong-javascript/</guid>
       
-      <description>&lt;p&gt;As I begin settling into a new flow of my life I find myself finding tremendous sanctuary and peace with myself.&lt;/p&gt;
-&lt;p&gt;I notice this internal tranquility seems to be related to my exodus of social media.&lt;/p&gt;
-&lt;p&gt;A few months away from my online addiction has left me with two fundamental conclusions.&lt;/p&gt;
-&lt;p&gt;First, My relationship with social media was &amp;ldquo;selfish&amp;rdquo;, &amp;ldquo;self-centered&amp;rdquo;, and &amp;ldquo;self-righteous&amp;rdquo; in nature. Egotistical.&lt;/p&gt;
-&lt;p&gt;Next, I believe I am not alone in this experience.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Toán tử là các ký hiệu đặc biệt hoặc từ khóa được sử dụng để thực hiện các thao tác trên các giá trị, biến hoặc biểu thức trong JavaScript.&lt;/p&gt;
+&lt;p&gt;JavaScript cung cấp một loạt các toán tử để xử lý dữ liệu và thực hiện các phép toán, từ toán học cơ bản đến logic phức tạp.&lt;/p&gt;
+&lt;h3 id=&#34;1-phân-loại-operators&#34;&gt;1. Phân loại Operators&lt;/h3&gt;
+&lt;p&gt;1.1. Arithmetic Operators (Toán tử số học)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const a = 10;
+const b = 3;
+
+console.log(a + b); // Cộng: 13
+console.log(a - b); // Trừ: 7
+console.log(a * b); // Nhân: 30
+console.log(a / b); // Chia: 3.333...
+console.log(a % b); // Chia lấy dư: 1
+console.log(a ** b); // Lũy thừa: 10^3 = 1000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;1.2. Assignment Operators (Toán tử gán)&lt;/p&gt;</description>
       
     </item>
     
