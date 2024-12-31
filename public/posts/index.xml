@@ -60,6 +60,21 @@ age = 30;
     </item>
     
     <item>
+      <title>Cơ chế biên dịch.</title>
+      <link>http://localhost:1313/posts/c%C6%A1-ch%E1%BA%BF-bi%C3%AAn-d%E1%BB%8Bch-c%E1%BB%A7a-java/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/c%C6%A1-ch%E1%BA%BF-bi%C3%AAn-d%E1%BB%8Bch-c%E1%BB%A7a-java/</guid>
+      
+      <description>&lt;p&gt;Cơ chế biên dịch của Java được thiết kế để thực hiện trên nguyên tắc &amp;ldquo;viết một lần, chạy ở mọi nơi&amp;rdquo; (Write Once, Run Anywhere). Điều này đạt được nhờ Java sử dụng Java Virtual Machine (JVM) làm trung gian giữa mã nguồn và hệ điều hành.&lt;/p&gt;
+&lt;h3 id=&#34;1-quy-trình-biên-dịch-java&#34;&gt;1. Quy trình biên dịch Java&lt;/h3&gt;
+&lt;p&gt;1.1. Biên dịch mã nguồn thành bytecode&lt;/p&gt;
+&lt;p&gt;Mã nguồn Java (file .java) được viết bằng ngôn ngữ Java.
+Trình biên dịch javac (Java Compiler) chuyển đổi mã nguồn này thành bytecode (file .class), là ngôn ngữ trung gian độc lập với nền tảng.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Hàm trong javascript.</title>
       <link>http://localhost:1313/posts/h%C3%A0m-trong-javascript/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
