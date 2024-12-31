@@ -27,6 +27,26 @@ age = 30;
     </item>
     
     <item>
+      <title>Các framework sử dụng Javascript.</title>
+      <link>http://localhost:1313/posts/c%C3%A1c-framework-xung-quanh-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/c%C3%A1c-framework-xung-quanh-javascript/</guid>
+      
+      <description>&lt;p&gt;JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất hiện nay, và nó có rất nhiều framework được thiết kế để hỗ trợ phát triển ứng dụng một cách nhanh chóng và hiệu quả. Dưới đây là các framework JavaScript nổi bật, được phân loại theo mục đích sử dụng:&lt;/p&gt;
+&lt;h3 id=&#34;1-frontend-frameworks&#34;&gt;1. Frontend Frameworks&lt;/h3&gt;
+&lt;p&gt;1.1. React&lt;/p&gt;
+&lt;p&gt;Đặc điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Được phát triển bởi Facebook.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hỗ trợ xây dựng giao diện người dùng thông qua các component.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Class và Class-based Approach trong JavaScript.</title>
       <link>http://localhost:1313/posts/class-v%C3%A0-class-based-approach-trong-javascript/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
