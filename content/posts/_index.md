@@ -1,3 +1,3 @@
 ---
-title: "Smaller, Social Posts"
+title: "Minh's Blog"
 ---

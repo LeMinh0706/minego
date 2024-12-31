@@ -5,6 +5,107 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on Blog của Minh</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biến, kiểu dữ liệu, ép kiểu và ghi chú trong Javascript.</title>
+      <link>http://localhost:1313/posts/bi%E1%BA%BFn-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-%C3%A9p-ki%E1%BB%83u-v%C3%A0-ghi-ch%C3%BA-trong-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/bi%E1%BA%BFn-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-%C3%A9p-ki%E1%BB%83u-v%C3%A0-ghi-ch%C3%BA-trong-javascript/</guid>
+      
+      <description>&lt;h3 id=&#34;1-biến-variables&#34;&gt;1. Biến (Variables)&lt;/h3&gt;
+&lt;p&gt;Biến là các thành phần dùng để lưu trữ dữ liệu hoặc giá trị trong chương trình. Trong JavaScript, bạn có thể khai báo biến bằng các từ khóa: var, let, hoặc const.&lt;/p&gt;
+&lt;p&gt;let:&lt;/p&gt;
+&lt;p&gt;Có phạm vi khối (block scope) - nghĩa là chỉ tồn tại trong {}.
+Có thể thay đổi giá trị sau khi khai báo&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let age = 25;
+age = 30;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;const:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Class và Class-based Approach trong JavaScript.</title>
+      <link>http://localhost:1313/posts/class-v%C3%A0-class-based-approach-trong-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/class-v%C3%A0-class-based-approach-trong-javascript/</guid>
+      
+      <description>&lt;p&gt;Trong JavaScript, class là một cách tổ chức và sử dụng code để tạo các đối tượng theo hướng lập trình hướng đối tượng (OOP). Nó được giới thiệu từ ECMAScript 2015 (ES6) và cung cấp cú pháp rõ ràng, dễ đọc hơn so với việc sử dụng các hàm khởi tạo (constructor function) truyền thống.&lt;/p&gt;
+&lt;h3 id=&#34;1-class-là-gì&#34;&gt;1. Class là gì?&lt;/h3&gt;
+&lt;p&gt;Class trong JavaScript là một &amp;ldquo;khuôn mẫu&amp;rdquo; (blueprint) để tạo các đối tượng có thuộc tính (property) và phương thức (method). Class cung cấp cú pháp đơn giản hơn để làm việc với lập trình hướng đối tượng.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hàm trong javascript.</title>
+      <link>http://localhost:1313/posts/h%C3%A0m-trong-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/h%C3%A0m-trong-javascript/</guid>
+      
+      <description>&lt;p&gt;Hàm (Function) là một khối mã được định nghĩa để thực hiện một nhiệm vụ cụ thể. Nó cho phép bạn tổ chức và tái sử dụng mã trong chương trình một cách hiệu quả. Trong JavaScript, hàm có nhiều loại và có thể được sử dụng linh hoạt. Hãy cùng tìm hiểu chi tiết!&lt;/p&gt;
+&lt;h3 id=&#34;1-định-nghĩa-hàm&#34;&gt;1. Định nghĩa hàm&lt;/h3&gt;
+&lt;p&gt;Hàm được định nghĩa bằng từ khóa function, theo sau là tên hàm, danh sách tham số (nếu có), và thân hàm được đặt trong cặp ngoặc {}.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Multithread trong java.</title>
+      <link>http://localhost:1313/posts/multithread-trong-java/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/multithread-trong-java/</guid>
+      
+      <description>&lt;p&gt;Multithreading trong Java là một kỹ thuật lập trình cho phép thực hiện đồng thời nhiều luồng (thread) trong một ứng dụng. Đây là một phần quan trọng trong lập trình song song để tận dụng tài nguyên CPU tốt hơn và cải thiện hiệu năng.&lt;/p&gt;
+&lt;h3 id=&#34;1-tổng-quan-về-thread-trong-java&#34;&gt;1. Tổng quan về Thread trong Java&lt;/h3&gt;
+&lt;p&gt;Thread: Là đơn vị thực thi nhỏ nhất trong một chương trình.&lt;/p&gt;
+&lt;p&gt;Multithreading: Là việc thực hiện đồng thời nhiều thread trong một ứng dụng.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Object trong javascript.</title>
+      <link>http://localhost:1313/posts/object-trong-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/object-trong-javascript/</guid>
+      
+      <description>&lt;p&gt;Object là một trong những kiểu dữ liệu cơ bản và quan trọng nhất trong JavaScript. Nó cho phép bạn lưu trữ, quản lý và thao tác dữ liệu phức tạp dưới dạng các cặp key-value (khoá và giá trị). Hãy cùng tìm hiểu chi tiết về cách sử dụng Object trong JavaScript!&lt;/p&gt;
+&lt;h3 id=&#34;1-khái-niệm-về-object&#34;&gt;1. Khái niệm về Object&lt;/h3&gt;
+&lt;p&gt;Trong JavaScript, Object là một tập hợp các cặp key-value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Key (khoá): Là một chuỗi (hoặc ký hiệu - symbol) đại diện cho tên thuộc tính.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Toán tử trong javascript.</title>
+      <link>http://localhost:1313/posts/to%C3%A1n-t%E1%BB%AD-trong-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/to%C3%A1n-t%E1%BB%AD-trong-javascript/</guid>
+      
+      <description>&lt;p&gt;Toán tử là các ký hiệu đặc biệt hoặc từ khóa được sử dụng để thực hiện các thao tác trên các giá trị, biến hoặc biểu thức trong JavaScript.&lt;/p&gt;
+&lt;p&gt;JavaScript cung cấp một loạt các toán tử để xử lý dữ liệu và thực hiện các phép toán, từ toán học cơ bản đến logic phức tạp.&lt;/p&gt;
+&lt;h3 id=&#34;1-phân-loại-operators&#34;&gt;1. Phân loại Operators&lt;/h3&gt;
+&lt;p&gt;1.1. Arithmetic Operators (Toán tử số học)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const a = 10;
+const b = 3;
+
+console.log(a + b); // Cộng: 13
+console.log(a - b); // Trừ: 7
+console.log(a * b); // Nhân: 30
+console.log(a / b); // Chia: 3.333...
+console.log(a % b); // Chia lấy dư: 1
+console.log(a ** b); // Lũy thừa: 10^3 = 1000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;1.2. Assignment Operators (Toán tử gán)&lt;/p&gt;</description>
+      
+    </item>
+    
   </channel>
 </rss>

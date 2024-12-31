@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Smaller, Social Posts on Blog của Minh</title>
+    <title>Minh&#39;s Blog on Blog của Minh</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Smaller, Social Posts on Blog của Minh</description>
+    <description>Recent content in Minh&#39;s Blog on Blog của Minh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -49,6 +49,20 @@ age = 30;
       <description>&lt;p&gt;Hàm (Function) là một khối mã được định nghĩa để thực hiện một nhiệm vụ cụ thể. Nó cho phép bạn tổ chức và tái sử dụng mã trong chương trình một cách hiệu quả. Trong JavaScript, hàm có nhiều loại và có thể được sử dụng linh hoạt. Hãy cùng tìm hiểu chi tiết!&lt;/p&gt;
 &lt;h3 id=&#34;1-định-nghĩa-hàm&#34;&gt;1. Định nghĩa hàm&lt;/h3&gt;
 &lt;p&gt;Hàm được định nghĩa bằng từ khóa function, theo sau là tên hàm, danh sách tham số (nếu có), và thân hàm được đặt trong cặp ngoặc {}.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Multithread trong java.</title>
+      <link>http://localhost:1313/posts/multithread-trong-java/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/multithread-trong-java/</guid>
+      
+      <description>&lt;p&gt;Multithreading trong Java là một kỹ thuật lập trình cho phép thực hiện đồng thời nhiều luồng (thread) trong một ứng dụng. Đây là một phần quan trọng trong lập trình song song để tận dụng tài nguyên CPU tốt hơn và cải thiện hiệu năng.&lt;/p&gt;
+&lt;h3 id=&#34;1-tổng-quan-về-thread-trong-java&#34;&gt;1. Tổng quan về Thread trong Java&lt;/h3&gt;
+&lt;p&gt;Thread: Là đơn vị thực thi nhỏ nhất trong một chương trình.&lt;/p&gt;
+&lt;p&gt;Multithreading: Là việc thực hiện đồng thời nhiều thread trong một ứng dụng.&lt;/p&gt;</description>
       
     </item>
     
