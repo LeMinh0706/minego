@@ -1,7 +1,7 @@
 {
     "name": "Blog của Minh",
     "short_name": "Blog của Minh",
-    "start_url": "http://localhost:1313/",
+    "start_url": "https://silly-muffin-6421e8.netlify.app/",
     "theme_color": "#434648",
     "background_color": "#ffffff",
     "display": "standalone",
